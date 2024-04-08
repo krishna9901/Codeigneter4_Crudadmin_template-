@@ -71,7 +71,7 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 
 **steps to be Fallow:**
 
-**1. Update Composer **
+**1. Update Composer**
 
 ```
 Composer update
@@ -79,7 +79,7 @@ Composer update
 ```
 
 **2. Update Environment Configuration
-Go to the .env file and change the CI_ENVIRONMENT variable to development. **
+Go to the .env file and change the CI_ENVIRONMENT variable to development.**
 
 ```
 CI_ENVIRONMENT = development
@@ -110,14 +110,14 @@ public array $default = [
     ];
 
 ```
-** 4. Migrate the Database Tables
-Run the following command to migrate the database tables: **
+**4. Migrate the Database Tables
+Run the following command to migrate the database tables:**
 ```
 php spark migrate
 
 ```
-** 5. Run the Application
-To start the application, run the following command: **
+**5. Run the Application
+To start the application, run the following command:**
 ```
 php spark serve
 
@@ -125,7 +125,7 @@ php spark serve
 *This will start the development server, and you can access your application at http://localhost:8080*
 
 
-**Application Features: **
+**Application Features:**
 Developed an admin interface for managing user data, including:
 1.Adding new users
 2.Updating existing user data
@@ -135,24 +135,24 @@ Developed an admin interface for managing user data, including:
 6.Provided functionality to download/generate user data in PDF format.
 
 Below are screenshots:
-** Login Screen **
+**Login Screen**
 ![image](https://github.com/krishna9901/Codeigneter4_Crudadmin_template-/assets/54264561/ed215c7a-7e1c-4d2c-9a58-41398c8c4488)
 
-** Register Screen **
+**Register Screen**
 ![image](https://github.com/krishna9901/Codeigneter4_Crudadmin_template-/assets/54264561/e6bea85f-40f2-4c8c-8c12-fd8af6748869)
 
 
-**Admin Home Page **
+**Admin Home Page**
 
 ![image](https://github.com/krishna9901/Codeigneter4_Crudadmin_template-/assets/54264561/3e0bb79c-722d-4743-acc9-d01e95d7ce41)
 
 
-** User Form **
+**User Form**
 
 ![image](https://github.com/krishna9901/Codeigneter4_Crudadmin_template-/assets/54264561/05ad3ffe-ec21-4fba-a73d-06ee37c249ea)
 
 
-** Genaerating Report **
+**Genaerating Report**
 
 ![image](https://github.com/krishna9901/Codeigneter4_Crudadmin_template-/assets/54264561/47e84b3b-797b-42fd-a265-23c74e3eb0b1)
 
