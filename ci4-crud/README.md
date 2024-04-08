@@ -126,23 +126,34 @@ php spark serve
 
 
 **Application Features:**
+
 Developed an admin interface for managing user data, including:
-1.Adding new users
-2.Updating existing user data
-3.Fetching user data
-4.Deleting user records
+
+1.Adding new users.
+
+2.Updating existing user data.
+
+3.Fetching user data.
+
+4.Deleting user records.
+
 5.Implemented signup and signin pages for user authentication.
+
 6.Provided functionality to download/generate user data in PDF format.
 
 Below are screenshots:
+
 **Login Screen**
+
 ![image](https://github.com/krishna9901/Codeigneter4_Crudadmin_template-/assets/54264561/ed215c7a-7e1c-4d2c-9a58-41398c8c4488)
 
 **Register Screen**
+
 ![image](https://github.com/krishna9901/Codeigneter4_Crudadmin_template-/assets/54264561/e6bea85f-40f2-4c8c-8c12-fd8af6748869)
 
 
 **Admin Home Page**
+
 
 ![image](https://github.com/krishna9901/Codeigneter4_Crudadmin_template-/assets/54264561/3e0bb79c-722d-4743-acc9-d01e95d7ce41)
 
