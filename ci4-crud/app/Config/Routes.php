@@ -38,4 +38,5 @@ $routes->get('/crud/delete/(:num)', 'Profile::delete/$1');
 
 
 
+$routes->get('/pdf', 'Pdf::generatePdf');
 

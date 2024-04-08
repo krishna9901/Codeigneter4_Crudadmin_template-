@@ -1,17 +1,18 @@
-<!-- <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Codeigniter Auth User Registration Example</title>
-</head> -->
+
 
 <?= $this->include('layouts/header.php'); ?>
 <body>
-    <div class="container mt-5">
-        <div class="row justify-content-md-center">
-            <div class="col-5">
+    <div class="container-fluid">
+
+    <div class="row bg-color ">
+            <div class="col-md-7 ">
+            <img src="<?= base_url('img/login.gif') ?>" class="justify-content-md-center login-img" width="70%" height="60%"/>
+
+</div>
+
+<div class="col-md-5">
+        <div class=" row justify-content-md- login-frm mr-4">
+            <div class="col-12">
                 <h2>Register User</h2>
                 <?php if(isset($validation)):?>
                 <div class="alert alert-warning">
@@ -44,7 +45,8 @@
             </div>
         </div>
     </div>
-
+                </div>
+                </div>
   
 </body>
 </html>

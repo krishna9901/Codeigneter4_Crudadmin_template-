@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-     content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <title>Edit Data - Codeigniter 4 Crud Application</title>
-    <!--  -->
-</head>
-<body>
-    <div class="container">
+<?= $this->include('layouts/header.php'); ?>
+
+<body id="page-top">
+
+
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+<?= $this->include('layouts/navsidebar.php'); ?>
+
+<div class="container">
         
         <?php 
 
@@ -17,7 +17,7 @@
 
 
         ?>
-        <h2 class="text-center mt-4 mb-4">Edit Data - Codeigniter 4 Crud Application</h2>
+       
         
         <div class="card">
             <div class="card-header">Edit Data</div>
@@ -84,6 +84,12 @@
         </div>
 
     </div>
- 
+
+
+
+
+
+</div>
 </body>
+<?= $this->include('layouts/footer.php'); ?>
 </html>

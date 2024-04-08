@@ -15,9 +15,12 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                        <a href="<?= base_url('/pdf') ?>"  class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
+                    
+                    
+                    
+                            </div>
 
                     <!-- Content Row -->
                     <div class="row">
@@ -151,14 +154,14 @@ if($session->getFlashdata('success'))
 <div class="card">
     <div class="card-header">
         <div class="row">
-            <div class="col">Sample Data</div>
+            <div class="col">User Data</div>
             <div class="col text-right">
                 <a href="<?php echo base_url("/crud/add")?>" class="btn btn-success btn-sm">Create</a>
             </div>
         </div>
     </div>
     <div class="card-body">
-        <div class="table-responsive">
+        <div class="table-responsive display" id="myTable" >
             <table class="table table-striped table-bordered">
                 <tr>
                     <th>ID</th>
@@ -238,8 +241,8 @@ if($session->getFlashdata('success'))
             <!-- End of Main Content -->
 
             <!-- Footer -->
+            
             <?= $this->include('layouts/footer.php'); ?>
-
             <!-- End of Footer -->
 
         </div>
@@ -253,43 +256,23 @@ if($session->getFlashdata('success'))
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="<?php echo base_url('logout'); ?>">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="<?= base_url('vendor/jquery/jquery.min.js')?>"></script>
-    <script src="<?= base_url('vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="<?= base_url('vendor/jquery-easing/jquery.easing.min.js')?>"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="<?= base_url('js/sb-admin-2.min.js')?>"></script>
-
-    <!-- Page level plugins -->
-    <script src="<?= base_url('vendor/chart.js/Chart.min.js')?>"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="<?= base_url('js/demo/chart-area-demo.js')?>"></script>
-    <script src="<?= base_url('js/demo/chart-pie-demo.js')?>"></script>
-
+ 
 </body>
+
+<script>
+function delete_data(id)
+{
+    if(confirm("Are you sure you want to remove it?"))
+    {
+        window.location.href="<?php echo base_url(); ?>/crud/delete/"+id;
+    }
+    return false;
+}
+
+
+</script>
+
 
 </html>
